@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Card Management Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card-container {
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+      padding: 15px;
+      position: relative;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    input {
+      padding: 5px;
+    }
+
+    .remove-card-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    #addCardBtn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    #saveBtn {
+      background-color: #4c7faf;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .card-numbers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+
+    .notification {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .notification.success {
+      background-color: green;
+      color: white;
+    }
+
+    .notification.error {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Card Management</h1>
+  <div id="cardsContainer"></div>
+  <button id="addCardBtn">Add New Card</button>
+  <button id="saveBtn">Save</button>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

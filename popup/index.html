@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AutoFill Form</title>
+  <style>
+    body {
+      width: 300px;
+    }
+
+    .radio-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .radio-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .radio-list li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .radio-list input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .radio-list li.selected {
+      background-color: #e0e0e0;
+      border-color: #999;
+    }
+
+    .radio-list label {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Auto Fill</h1>
+  <ul class="radio-list" id="optionList">
+  </ul>
+  <button id="fillButton">Fill</button>
+  <button id="go-to-options">Go to options</button>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
