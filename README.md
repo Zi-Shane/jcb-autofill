@@ -17,6 +17,8 @@ A chrome extention can autofill [JCB event page](https://ezweb.easycard.com.tw/E
 1. Install chrome extention
 2. Go to [JCB event page](https://ezweb.easycard.com.tw/Event01/JCBLoginServlet) or serve page your self for testing(e.g. `npx serve ./jcb-event-page`).
 
+- You must open or refreash the event page after install chrome extention for correctly acitve extention on this chrome tab!
+
 ## Demo
 
 [Video](https://youtu.be/e_C7zHSiEhQ)
