@@ -57,6 +57,7 @@ function renderCards() {
     cards = result.cards || [];
     appendCardList(cards, document.getElementById("optionList"));
   });
+  addEventListeners();
 }
 
 function appendCardList(cards, parent) {
@@ -95,4 +96,3 @@ function addEventListeners() {
 }
 
 document.addEventListener("DOMContentLoaded", renderCards);
-addEventListeners();
